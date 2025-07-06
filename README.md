@@ -105,6 +105,29 @@ $settings = Settings::getMany(['app_name', 'version', 'debug']);
 Settings::set('api_key', 'secret-key', 'API key for external services');
 ```
 
+### Helper Function
+
+The package provides a convenient global `settings()` helper function that mimics Laravel's `config()` helper:
+
+```php
+// Get a setting
+$appName = settings('app.name');
+$debug = settings('debug', false); // with default value
+
+// Get all settings
+$allSettings = settings();
+
+// Set multiple settings
+settings([
+    'app.name' => 'My Application',
+    'app.version' => '2.0.0',
+    'debug' => true
+]);
+
+// Set a single setting (using second parameter)
+settings('app.theme', 'dark');
+```
+
 ### Dot Notation Support
 
 The package supports dot notation for nested settings:
