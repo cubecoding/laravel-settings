@@ -2,7 +2,7 @@
     "name": "cubecoding/laravel-settings",
     "description": "A minimal Laravel package for storing project settings in database",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "MIT",
     "authors": [
         {
