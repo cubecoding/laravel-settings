@@ -1,0 +1,9 @@
+/vendor/
+/coverage/
+.phpunit.cache/
+.env
+.env.*
+!.env.example
+composer.phar
+.DS_Store
+.idea/
